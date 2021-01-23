@@ -1,23 +1,22 @@
 (function() {
     
     const form = document.querySelector('#message-form')
+    console.log("form",form)
     form.addEventListener('submit', function(e){
-        // prevent the form's default submission action
         e.preventDefault()
-        //Get user's input from from
-        const message = document.querySelector('#message')
+        const inputText = document.querySelector('#inputText')
         const feedback = document.querySelector('.feedback')
-        const messageContent = document.querySelector('.message-content')
+        const messageContent = document.querySelector('.messageContent')
     
-        if (message.value === ''){
+        if (inputText.value === ''){
+            console.log("inputText.value",inputText.value);
             feedback.classList.add('show')
             setTimeout(function(){
             feedback.classList.remove('show')
             }, 2000)
         } else {
-            //Change message content and clear the message input
-            messageContent.textContent = message.value
-            message.value = ''
+            messageContent.textContent = inputText.value
+            inputText.value = ''
         }
     })
     })()

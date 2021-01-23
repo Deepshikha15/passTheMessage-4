@@ -4,17 +4,15 @@
 body {
   background: var(--lightBlue);
 }
-.message-container {
-  background: var(--mainwhite);
-}
-.message-content {
+
+.messageContent {
   color: var(--lightBlue);
 }
-#submitBtn {
+#Submit {
   background: var(--lightBlue);
   color: var(--mainwhite);
 }
-#submitBtn:hover {
+#Submit:hover {
   color: var(--lightBlue);
   color: var(--mainBlack);
 }
